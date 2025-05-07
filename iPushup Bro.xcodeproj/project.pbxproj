@@ -14,6 +14,7 @@
 		7DD72B9A2AC83A84002A24B9 /* iPushupTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD72B992AC83A84002A24B9 /* iPushupTests.swift */; };
 		7DD72BA42AC83A84002A24B9 /* iPushupUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD72BA32AC83A84002A24B9 /* iPushupUITests.swift */; };
 		7DD72BA62AC83A84002A24B9 /* iPushupUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD72BA52AC83A84002A24B9 /* iPushupUITestsLaunchTests.swift */; };
+		7DD72BB72AC8605F002A24B9 /* pushup_sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7DD72BB62AC8605F002A24B9 /* pushup_sound.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,16 +35,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		7DD72B852AC83A81002A24B9 /* iPushup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iPushup.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7DD72B852AC83A81002A24B9 /* iPushup Counter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iPushup Counter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DD72B882AC83A81002A24B9 /* iPushupApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPushupApp.swift; sourceTree = "<group>"; };
 		7DD72B8A2AC83A81002A24B9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7DD72B8C2AC83A83002A24B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7DD72B8F2AC83A83002A24B9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		7DD72B952AC83A84002A24B9 /* iPushupTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iPushupTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7DD72B952AC83A84002A24B9 /* iPushup CounterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iPushup CounterTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DD72B992AC83A84002A24B9 /* iPushupTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPushupTests.swift; sourceTree = "<group>"; };
-		7DD72B9F2AC83A84002A24B9 /* iPushupUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iPushupUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7DD72B9F2AC83A84002A24B9 /* iPushup CounterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iPushup CounterUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DD72BA32AC83A84002A24B9 /* iPushupUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPushupUITests.swift; sourceTree = "<group>"; };
 		7DD72BA52AC83A84002A24B9 /* iPushupUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPushupUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7DD72BB42AC840B8002A24B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		7DD72BB62AC8605F002A24B9 /* pushup_sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pushup_sound.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,9 +87,9 @@
 		7DD72B862AC83A81002A24B9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7DD72B852AC83A81002A24B9 /* iPushup.app */,
-				7DD72B952AC83A84002A24B9 /* iPushupTests.xctest */,
-				7DD72B9F2AC83A84002A24B9 /* iPushupUITests.xctest */,
+				7DD72B852AC83A81002A24B9 /* iPushup Counter.app */,
+				7DD72B952AC83A84002A24B9 /* iPushup CounterTests.xctest */,
+				7DD72B9F2AC83A84002A24B9 /* iPushup CounterUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -94,9 +97,11 @@
 		7DD72B872AC83A81002A24B9 /* iPushup */ = {
 			isa = PBXGroup;
 			children = (
+				7DD72BB42AC840B8002A24B9 /* Info.plist */,
 				7DD72B882AC83A81002A24B9 /* iPushupApp.swift */,
 				7DD72B8A2AC83A81002A24B9 /* ContentView.swift */,
 				7DD72B8C2AC83A83002A24B9 /* Assets.xcassets */,
+				7DD72BB62AC8605F002A24B9 /* pushup_sound.mp3 */,
 				7DD72B8E2AC83A83002A24B9 /* Preview Content */,
 			);
 			path = iPushup;
@@ -130,9 +135,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7DD72B842AC83A81002A24B9 /* iPushup */ = {
+		7DD72B842AC83A81002A24B9 /* iPushup Counter */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7DD72BA92AC83A84002A24B9 /* Build configuration list for PBXNativeTarget "iPushup" */;
+			buildConfigurationList = 7DD72BA92AC83A84002A24B9 /* Build configuration list for PBXNativeTarget "iPushup Counter" */;
 			buildPhases = (
 				7DD72B812AC83A81002A24B9 /* Sources */,
 				7DD72B822AC83A81002A24B9 /* Frameworks */,
@@ -142,14 +147,14 @@
 			);
 			dependencies = (
 			);
-			name = iPushup;
+			name = "iPushup Counter";
 			productName = iPushup;
-			productReference = 7DD72B852AC83A81002A24B9 /* iPushup.app */;
+			productReference = 7DD72B852AC83A81002A24B9 /* iPushup Counter.app */;
 			productType = "com.apple.product-type.application";
 		};
-		7DD72B942AC83A84002A24B9 /* iPushupTests */ = {
+		7DD72B942AC83A84002A24B9 /* iPushup CounterTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7DD72BAC2AC83A84002A24B9 /* Build configuration list for PBXNativeTarget "iPushupTests" */;
+			buildConfigurationList = 7DD72BAC2AC83A84002A24B9 /* Build configuration list for PBXNativeTarget "iPushup CounterTests" */;
 			buildPhases = (
 				7DD72B912AC83A84002A24B9 /* Sources */,
 				7DD72B922AC83A84002A24B9 /* Frameworks */,
@@ -160,14 +165,14 @@
 			dependencies = (
 				7DD72B972AC83A84002A24B9 /* PBXTargetDependency */,
 			);
-			name = iPushupTests;
+			name = "iPushup CounterTests";
 			productName = iPushupTests;
-			productReference = 7DD72B952AC83A84002A24B9 /* iPushupTests.xctest */;
+			productReference = 7DD72B952AC83A84002A24B9 /* iPushup CounterTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		7DD72B9E2AC83A84002A24B9 /* iPushupUITests */ = {
+		7DD72B9E2AC83A84002A24B9 /* iPushup CounterUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7DD72BAF2AC83A84002A24B9 /* Build configuration list for PBXNativeTarget "iPushupUITests" */;
+			buildConfigurationList = 7DD72BAF2AC83A84002A24B9 /* Build configuration list for PBXNativeTarget "iPushup CounterUITests" */;
 			buildPhases = (
 				7DD72B9B2AC83A84002A24B9 /* Sources */,
 				7DD72B9C2AC83A84002A24B9 /* Frameworks */,
@@ -178,9 +183,9 @@
 			dependencies = (
 				7DD72BA12AC83A84002A24B9 /* PBXTargetDependency */,
 			);
-			name = iPushupUITests;
+			name = "iPushup CounterUITests";
 			productName = iPushupUITests;
-			productReference = 7DD72B9F2AC83A84002A24B9 /* iPushupUITests.xctest */;
+			productReference = 7DD72B9F2AC83A84002A24B9 /* iPushup CounterUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -206,7 +211,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 7DD72B802AC83A81002A24B9 /* Build configuration list for PBXProject "iPushup" */;
+			buildConfigurationList = 7DD72B802AC83A81002A24B9 /* Build configuration list for PBXProject "iPushup Counter" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -219,9 +224,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7DD72B842AC83A81002A24B9 /* iPushup */,
-				7DD72B942AC83A84002A24B9 /* iPushupTests */,
-				7DD72B9E2AC83A84002A24B9 /* iPushupUITests */,
+				7DD72B842AC83A81002A24B9 /* iPushup Counter */,
+				7DD72B942AC83A84002A24B9 /* iPushup CounterTests */,
+				7DD72B9E2AC83A84002A24B9 /* iPushup CounterUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -231,6 +236,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DD72BB72AC8605F002A24B9 /* pushup_sound.mp3 in Resources */,
 				7DD72B902AC83A83002A24B9 /* Preview Assets.xcassets in Resources */,
 				7DD72B8D2AC83A83002A24B9 /* Assets.xcassets in Resources */,
 			);
@@ -284,12 +290,12 @@
 /* Begin PBXTargetDependency section */
 		7DD72B972AC83A84002A24B9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 7DD72B842AC83A81002A24B9 /* iPushup */;
+			target = 7DD72B842AC83A81002A24B9 /* iPushup Counter */;
 			targetProxy = 7DD72B962AC83A84002A24B9 /* PBXContainerItemProxy */;
 		};
 		7DD72BA12AC83A84002A24B9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 7DD72B842AC83A81002A24B9 /* iPushup */;
+			target = 7DD72B842AC83A81002A24B9 /* iPushup Counter */;
 			targetProxy = 7DD72BA02AC83A84002A24B9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -425,6 +431,7 @@
 				DEVELOPMENT_TEAM = NJ5FBNSE69;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = iPushup/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -454,6 +461,7 @@
 				DEVELOPMENT_TEAM = NJ5FBNSE69;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = iPushup/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -488,7 +496,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iPushup.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/iPushup";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iPushup Counter.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/iPushup Counter";
 			};
 			name = Debug;
 		};
@@ -508,7 +516,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iPushup.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/iPushup";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iPushup Counter.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/iPushup Counter";
 			};
 			name = Release;
 		};
@@ -551,7 +559,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7DD72B802AC83A81002A24B9 /* Build configuration list for PBXProject "iPushup" */ = {
+		7DD72B802AC83A81002A24B9 /* Build configuration list for PBXProject "iPushup Counter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7DD72BA72AC83A84002A24B9 /* Debug */,
@@ -560,7 +568,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7DD72BA92AC83A84002A24B9 /* Build configuration list for PBXNativeTarget "iPushup" */ = {
+		7DD72BA92AC83A84002A24B9 /* Build configuration list for PBXNativeTarget "iPushup Counter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7DD72BAA2AC83A84002A24B9 /* Debug */,
@@ -569,7 +577,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7DD72BAC2AC83A84002A24B9 /* Build configuration list for PBXNativeTarget "iPushupTests" */ = {
+		7DD72BAC2AC83A84002A24B9 /* Build configuration list for PBXNativeTarget "iPushup CounterTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7DD72BAD2AC83A84002A24B9 /* Debug */,
@@ -578,7 +586,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7DD72BAF2AC83A84002A24B9 /* Build configuration list for PBXNativeTarget "iPushupUITests" */ = {
+		7DD72BAF2AC83A84002A24B9 /* Build configuration list for PBXNativeTarget "iPushup CounterUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7DD72BB02AC83A84002A24B9 /* Debug */,
